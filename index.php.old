@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>采购申请审批</title>
+<meta charset="utf-8" />
+<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+<link type="text/css" href="my_style.css"
+	rel="stylesheet" />
+<script type="text/javascript" src="script/require.js"
+	data-main="js/main">
+	</script>
+
+</head>
+<body class="contentx">
+	<form method="post" id="loginForm"  action="purreq.php">
+		<div>
+			<table border="0" align="center"  cellspacing="0" >
+			<tr>
+			<td colspan='2'>
+			<input type="image" src='images/logo.jpg'>
+			</td>
+			</tr>
+					<tr>
+				  <td class="td">采购申请号码</td>
+					<td><input type="text" id="number" name="number" value=<?php 
+					echo $_GET['number'];
+					?> ></td>
+				</tr>
+				<tr>
+				    <td>SAP用户名</td>
+					<td><input type="text" id="userName" name="userName"></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input type="password" id="pwd" name="pwd"></td>
+				</tr>
+				<tr align="center">
+				    <td><input type="submit" id="submit" value="提交" /></td>
+				    <td><input type="reset" id="resetBtn" value="重置" /></td>
+				</tr>
+		</table>
+		</div>
+</body>
+</html>
